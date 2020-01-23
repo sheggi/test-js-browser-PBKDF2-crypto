@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<header>
+  <title>PBKDF2 Crypto Test</title>
+  <style>
+  textarea {
+    display: block;
+    width: 100%;
+  }
+
+  div {
+    margin-bottom: 2rem;;
+  }
+  </style>
+</header>
+
+<body>
+  <div>
+    Configs
+    <pre id="config"></pre>
+    <input type="button" value="toggle encoding" id="toggle-encoding">
+  </div>
+
+  <div>
+    Password
+    <input id="password" value="asdf">
+  </div>
+
+  <div>
+    Plain Input
+    <textarea type="text" name="plain-in" id="plain-in">hi</textarea>
+    <input type="button" value="encrypt" id="do-encrypt">
+  </div>
+
+  <div>
+    Encrypted
+    <textarea type="text" name="encrypted" id="encrypted"></textarea>
+    <input type="button" value="decrypt" id="do-decrypt">
+  </div>
+
+  <div>
+    Decrypted
+    <textarea type="text" name="decrypted" id="decrypted"></textarea>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
